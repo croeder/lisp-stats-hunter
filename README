@@ -1,0 +1,114 @@
+This is project to work through, in a number of undetermined programming languages, the parts of Fundamentals of Biostatistics that Larry used to build his lisp stats code when he taught the course.
+
+Larry has implementations of:
+- Descriptive Statistics
+    - Mean, Rosner 10
+    - Median, Rosner 12, 19
+    - Mode, Rosner 14
+    - Geometric Mean, Rosner 16
+    - Range, Rosner 18
+    - Percentile, Rosner 19
+    - Variance, Rosner 21
+    - Std. Deviation, Rosner 21
+    - Coeff. of Variation, Rosner 24
+    - Std error of the mean, Rosner 172
+- Distributions
+    - Bionomial
+        - exact, Rosner 93
+        - approximate, Rosner 105
+        - cumulative, Rosner 94
+        - ge, Rosner 94
+        - binomial-le-probability, Hunter
+    - Poisson
+        - probability, Rosner 100
+        - cumulative probability, Rosner 197
+        - ge
+    - Normal
+        - Normal Probability Density Function (pdf), Rosner 115
+        - Convert Standard to Normal, Rosner 130
+        - Phi, CDF (?) of standard normal distribution, Rosner 125 ????
+        - Z inverse normal function, Rosner 128
+    - T Distribution, Rosner 178
+    - Chi Square, Rosner 187
+        - distribution
+        - cdf
+- Confidence Intervals
+    - Binomial
+        - approximate, Rosner 193
+        - exact, Rosner 194
+    - Poisson mu CI, Rosner 197
+    - Normal 
+        - mean CI, Rosner 180
+        - normal mean CI on sequence
+        - normal mean variance ci, Rosner 190   
+        - normal mean variance ci on sequence
+        - normal sd ci, Rosner 190
+        - normal sd ci on sequence
+- Hypothesis Testing
+    - Z Test, Rosner 228
+    - T Test, Rosner 216
+        - paired
+        - on sequence
+        - two sample
+        - two sample on sequence
+    - F Test, Rosner 290
+    - Chi Square test, Rosner 246
+    - Bionomial Test one sample, Rosner 246
+    - Bionomial Test two sample, Rosner 357
+    - Fisher Exact Test, Rosner 371
+    - McNemar's Test, Rosner 379, 381
+    - Poisson Test one sample, Rosner 259
+- Non Parametric Hypothesis Testing
+    - Sign Test, Rosner 335-7
+    - Sign Test on sequence
+    - Wilcoxon signed rank Test, Rosner 341
+    - Chi Square Test RxC, Rosner 395
+    - Chi Square Test for Trend, Rosner 398
+- Sample Size Estimates  (SSE)
+    - T-Test
+        - One Sample SSE, Rosner 238
+        - Two Sample SSE, Rosner 308
+        - Paired SSE, Rosner 311
+    - Bionomial Test
+        - One Sample SSE, Rosner 254
+        - Two Sample SSE, Rosner 384
+        - Paired SSE, Rosner 387             
+        - Correlation SSE, Rosner 463
+- Correlation and Regression
+    - Linear Regression, Rosner 431     
+        - Correlation Coefficient, AKA  Pearson Correlation
+    - Correlation Test Two Sample, Rosner 464
+        - on sequences
+    - Spearman Rank Correlation, Rosner 498
+- Significance Functions
+    - T Significance, Rosner??
+    - F Significance, Rosner??
+    - ChiSquare, Normal ??
+
+
+- Utilities
+    - random sample
+        - distribution?
+    - random pick
+    - random normal given mean and sdev
+    - bin and count (frequency distribution?)
+    - Fisher Z Transform, Rosner 458
+    - Permutations, Rosner 88
+    - Combinations, Rosner 90
+    - mean-sd-n
+    - round float
+    
+- False Discovery Correction, Benjamini & Hochberg 1995o
+- Bonferroni Correction, Rosner 527
+
+- Internals, many from  http://eksl-www.cs.umass.edu/clasp.html
+    - sign
+    - factorial
+    - average-rank
+    - error-function
+    - gamma-incomplete
+    - gamma-ln
+    - error-function-complement
+    - find-critical-value
+    - beta-incomplete
+    - safe-exp
